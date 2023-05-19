@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-6.4.0-web/css/all.css">
+    <title>Ong Hoa Hanh</title>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="body_form">
+            <div class="three_button">
+                <div class="body_button">
+                    <div class="sound_auto">
+                        <button class="start-audio-btn">
+                            <i class="fa-solid fa-circle-play"></i>
+                            Play Music Now
+                        </button>
+                        <!--  just some random mp3 I found -->
+                        <audio src="./music/making.mp3" class="sound"></audio>
+                    </div>
+                    <div class="button_1">
+                        <a href="https://www.facebook.com/onghoahanh?mibextid=LQQJ4d">
+                            <button> <i class="fa-brands fa-facebook"></i>
+                                Facebook
+                            </button>
+                        </a>
+                    </div>
+                    <div class="button_2">
+                        <a href="https://www.instagram.com/onghoahanh/">
+                            <button> 
+                                <i class="fa-brands fa-instagram"></i>
+                                    Instagram
+                            </button>
+                        </a>
+                    </div>
+                    <div class="button_3">
+                        <a href="https://www.tiktok.com/@hoahanh_tuongvy">
+                            <button> 
+                                <i class="fa-brands fa-tiktok"></i>
+                                 Tik tok
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="three_call">
+                <div class="body_call">
+                    <div class="click circle messenger_call">
+                        <a href="https://www.facebook.com/messages/t/100015565875906">
+                            <i class="fa-brands fa-facebook-messenger"></i>
+                        </a>
+                    </div>
+                    <div class="click circle telephone_call">
+                        <a href="tel:0353752406">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                    <div class="click zalo_call">
+                        <a href="https://zalo.me/0353752406">
+                            <img width="45" height="45" src="https://img.icons8.com/color/48/zalo.png" alt="zalo"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script>
+    const button = document.querySelector('.start-audio-btn');
+    // Get the audio element
+    const sound = document.querySelector('.sound');
+    // Start the audio element's playback using the `play` method when the button's clicked
+    button.addEventListener('click', (_) => { sound.play(); });
+</script>
+</html>
